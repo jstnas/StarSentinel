@@ -3,8 +3,11 @@ guid: 3c4403313e98f4b43af94eeacdebdeea
 timeCreated: 1519232977
 licenseType: Pro
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - floorTilePrefab: {fileID: 1862539532038266, guid: 463499193eda6b94083d602163ccd2d4,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
