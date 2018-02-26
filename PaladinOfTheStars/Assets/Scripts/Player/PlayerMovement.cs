@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Paladin of the stars
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
