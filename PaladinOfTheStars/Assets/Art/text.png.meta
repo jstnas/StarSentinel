@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: 1d818f3efded4724783c10d4d1df223d
-timeCreated: 1519244461
+guid: 2b483835b0e090a41825164a0fc7497c
+timeCreated: 1522086887
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: idle0
-    21300002: idle1
-    21300004: idle2
-    21300006: idle3
+    21300000: Paused
+    21300002: Continue
+    21300004: Exit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -134,57 +133,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle0
+      name: Paused
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 40
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Continue
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Exit
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: idle1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 0
-        width: 12
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: idle2
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 0
-        width: 12
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: idle3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 0
-        width: 12
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
