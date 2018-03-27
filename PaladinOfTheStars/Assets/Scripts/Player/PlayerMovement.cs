@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update()
     {
-        _isPaused = GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().GetIsPaused();
+        _isPaused = GameObject.Find("EventSystem").GetComponent<PauseMenu>().GetIsPaused();
         _playerTransform.position = new Vector3(Mathf.Round(_playerTransform.position.x * 100) / 100, Mathf.Round(_playerTransform.position.y * 100) / 100, 0);
 
         // Move the player
