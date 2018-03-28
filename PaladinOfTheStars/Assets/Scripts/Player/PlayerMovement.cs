@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public GameObject eventSystem;
+
     private Transform _playerTransform;
     private Vector3 _mousePosition;
     private bool _isPaused;
@@ -16,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update()
     {
-        _isPaused = GameObject.Find("EventSystem").GetComponent<PauseMenu>().GetIsPaused();
+        _isPaused = eventSystem.GetComponent<PauseMenu>().GetIsPaused();
         _playerTransform.position = new Vector3(Mathf.Round(_playerTransform.position.x * 100) / 100, Mathf.Round(_playerTransform.position.y * 100) / 100, 0);
 
         // Move the player
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
             float _verticalInput = Input.GetAxisRaw("Vertical") * 0.01f;
             _mousePosition = Input.mousePosition;
 
-            // Update rotations from mouse.
+            // scale change due to mouse.
             var _playerScreenPoint = Camera.main.WorldToScreenPoint(_playerTransform.transform.position);
             if (_mousePosition.x < _playerScreenPoint.x)
             {
@@ -38,7 +40,7 @@ public class PlayerMovement : MonoBehaviour {
                 _playerTransform.localScale = new Vector3(1, _playerTransform.localScale.y, _playerTransform.localScale.z);
             }
 
-            // rotations from movement override rotations from cursor.
+            // scale change due to keyboard.
             if (_horizontalInput > 0)
             {
                 _playerTransform.localScale = new Vector3(1, _playerTransform.localScale.y, _playerTransform.localScale.z);

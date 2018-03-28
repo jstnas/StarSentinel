@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{65b26de4-1003-4ff7-9fec-862609700679}">
+        <property name="assetPath">
+            <value>Dungeon.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>77.777709750566899</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{15868950-314a-47c4-8a84-ac6c8f300bbe}</destination>
+        </relationship>
+    </object>
+</objects>

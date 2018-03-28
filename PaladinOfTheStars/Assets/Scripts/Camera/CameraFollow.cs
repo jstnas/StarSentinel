@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
+
     public float lerpTime = 0.1f;
 
     private Transform _playerTransform;

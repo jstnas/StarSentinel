@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114412896342524074}
+  - {fileID: 114907066890246172}
+  - {fileID: 114017430862736082}
+  - {fileID: 114556257737679756}
+  EditorEvents:
+  - {fileID: 114999545118029714}
+  MasterBankRef: {fileID: 114017430862736082}
+  StringsBankRef: {fileID: 114412896342524074}
+  stringsBankWriteTime: 636578371980000000
+  cacheVersion: 2
+--- !u!114 &114017430862736082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: G:\_repos\PaladinOfTheStars\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636578371980000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &114412896342524074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\Sounds\FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636578371980000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 822
+  Exists: 1
+--- !u!114 &114556257737679756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: G:\_repos\PaladinOfTheStars\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\MusicVolume.bank
+  lastModified: 636578372020000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 844032
+  Exists: 1
+--- !u!114 &114907066890246172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: G:\_repos\PaladinOfTheStars\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\Intensity.bank
+  lastModified: 636578372000000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 844032
+  Exists: 1
+--- !u!114 &114999545118029714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Dungeon
+  guid: 6eacb91b410b2745ba60585392dc55e2
+  Banks:
+  - {fileID: 114907066890246172}
+  - {fileID: 114556257737679756}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 77777
