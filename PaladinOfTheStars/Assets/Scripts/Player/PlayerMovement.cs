@@ -1,4 +1,9 @@
-﻿// Paladin of the stars
+﻿/*
+Project: Star Sentinel
+Developer:
+Version: 0.0.1
+Date: 17/04/2018 10:39
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,20 +11,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public GameObject eventSystem;
-
-    private Transform _playerTransform;
     private Vector3 _mousePosition;
     private bool _isPaused;
-
-    private void Awake()
-    {
-        _playerTransform = GetComponent<Transform>();
-    }
 
     private void Update()
     {
         _isPaused = eventSystem.GetComponent<PauseMenu>().GetIsPaused();
-        _playerTransform.position = new Vector3(Mathf.Round(_playerTransform.position.x * 100) / 100, Mathf.Round(_playerTransform.position.y * 100) / 100, 0);
+        transform.position = new Vector3(Mathf.Round(transform.position.x * 100) / 100, Mathf.Round(transform.position.y * 100) / 100, 0);
 
         // Move the player
         if (!_isPaused)
@@ -30,27 +28,27 @@ public class PlayerMovement : MonoBehaviour {
             _mousePosition = Input.mousePosition;
 
             // scale change due to mouse.
-            var _playerScreenPoint = Camera.main.WorldToScreenPoint(_playerTransform.transform.position);
+            var _playerScreenPoint = Camera.main.WorldToScreenPoint(transform.transform.position);
             if (_mousePosition.x < _playerScreenPoint.x)
             {
-                _playerTransform.localScale = new Vector3(-1, _playerTransform.localScale.y, _playerTransform.localScale.z);
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
             }
             else
             {
-                _playerTransform.localScale = new Vector3(1, _playerTransform.localScale.y, _playerTransform.localScale.z);
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             }
 
             // scale change due to keyboard.
             if (_horizontalInput > 0)
             {
-                _playerTransform.localScale = new Vector3(1, _playerTransform.localScale.y, _playerTransform.localScale.z);
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             }
             else if (_horizontalInput < 0)
             {
-                _playerTransform.localScale = new Vector3(-1, _playerTransform.localScale.y, _playerTransform.localScale.z);
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
             }
 
-            _playerTransform.position = new Vector3(_playerTransform.position.x + _horizontalInput, _playerTransform.position.y + _verticalInput, -1);
+            transform.position = new Vector3(transform.position.x + _horizontalInput, transform.position.y + _verticalInput, -1);
         } 
     }
 }

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114412896342524074}
-  - {fileID: 114907066890246172}
-  - {fileID: 114017430862736082}
-  - {fileID: 114556257737679756}
+  - {fileID: 114752685870195518}
+  - {fileID: 114931668454868206}
+  - {fileID: 114196965238406564}
+  - {fileID: 114251915831063884}
   EditorEvents:
-  - {fileID: 114999545118029714}
-  MasterBankRef: {fileID: 114017430862736082}
-  StringsBankRef: {fileID: 114412896342524074}
-  stringsBankWriteTime: 636578371980000000
+  - {fileID: 114917652139244612}
+  MasterBankRef: {fileID: 114196965238406564}
+  StringsBankRef: {fileID: 114752685870195518}
+  stringsBankWriteTime: 636595531526660233
   cacheVersion: 2
 --- !u!114 &114017430862736082
 MonoBehaviour:
@@ -40,6 +40,43 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
+  Exists: 1
+--- !u!114 &114196965238406564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\repos\StarSentinel\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636595531526615097
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &114251915831063884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\repos\StarSentinel\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\MusicVolume.bank
+  lastModified: 636595531549207665
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 844160
   Exists: 1
 --- !u!114 &114412896342524074
 MonoBehaviour:
@@ -77,6 +114,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 844032
   Exists: 1
+--- !u!114 &114752685870195518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\Sounds\FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636595531526660233
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 832
+  Exists: 1
 --- !u!114 &114907066890246172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +149,47 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 844032
+  Exists: 1
+--- !u!114 &114917652139244612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Dungeon
+  guid: 6eacb91b410b2745ba60585392dc55e2
+  Banks:
+  - {fileID: 114931668454868206}
+  - {fileID: 114251915831063884}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 77777
+--- !u!114 &114931668454868206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\repos\StarSentinel\PaladinOfTheStars\Assets\Sounds\FMOD\Build\Desktop\Intensity.bank
+  lastModified: 636595531548990057
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 844160
   Exists: 1
 --- !u!114 &114999545118029714
 MonoBehaviour:
