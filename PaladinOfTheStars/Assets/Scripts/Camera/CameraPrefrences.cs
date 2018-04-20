@@ -1,24 +1,22 @@
-﻿// Duo Chroma By Sigma Games
-// Camera Adjustment script By Justinas "SigmaPi" Grigas
-// Version 0.2.0
-// This script ensures that every pixel is drawn cleanly onto the screen.
-using System.Collections;
-using System.Collections.Generic;
+﻿// Project: Star Sentinel - https://sigsec.github.io
+// Developer: Justinas Grigas - https://sigsec.github.io
+// Version: 0.0.2
+// Date: 18/04/2018 12:50
+
 using UnityEngine;
 
-public class CameraSize : MonoBehaviour {
-    // Width of each pixel on the screen.
-    public int pixelWidth = 1;
-    // Camera object that will be modified.
-    private Camera _camera;
-    // The screen width and height snaped to the nearest.
-    private float _screenWidth;
+public class CameraPrefrences : MonoBehaviour {
+
+	private Camera _camera;
+	private GlobalManager _manager;
+
+	private float _screenWidth;
     private float _screenHeight;
 
     private void Awake()
     {
-        // Grabs the camera component from the game object.
         _camera = GetComponent<Camera>();
+		_manager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>();
     }
 
     private void Update()
@@ -27,19 +25,13 @@ public class CameraSize : MonoBehaviour {
         _screenWidth = Mathf.FloorToInt(Screen.width / 32.0f);
 
         // Picks the smaller screen size to make sure it fits.
-        if (_screenHeight < _screenWidth)
-        {
-            _screenWidth = _screenHeight;
-        }
-        else
-        {
-            _screenHeight = _screenWidth;
-        }
+        if (_screenHeight < _screenWidth) { _screenWidth = _screenHeight; }
+        else { _screenHeight = _screenWidth; }
 
         _screenHeight *= 18.0f;
         _screenWidth *= 32.0f;
 
-        _camera.orthographicSize = _screenWidth / 355.029585799f / pixelWidth;
+        _camera.orthographicSize = _screenWidth / 355.029585799f / _manager.GetPixelSize();
         
         // Creates a new camera rectangle and modifies it.
         Rect _rect      = _camera.rect;
