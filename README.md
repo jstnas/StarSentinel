@@ -1,2 +1,2 @@
 # PaladinOfTheStars
-By Sigma Games
+By Jstn_as
